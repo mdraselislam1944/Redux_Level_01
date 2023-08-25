@@ -1,12 +1,13 @@
 import React from 'react';
 import Home from './Pages/Home';
 import Counter from './components/Counter';
+import { Outlet } from 'react-router-dom';
 
 const App = () => {
   return (
     <div>
-      <Home/>
-      <Counter/>
+      {/* <Counter/> */}
+      <Outlet/>
     </div>
   );
 };
